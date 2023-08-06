@@ -1,4 +1,4 @@
-# Githunt - A GitHub Finder App
+# [Githunt - A GitHub Finder App](https://githunt.onrender.com/)
 Githunt is a github finder app to search for Github users and display their info. The app shows the most followed users, most starred repositories and can find a user and display their github info and their repositories. The app achieves this by fetching from the Github API. Made with React 18
 
 <!-- toc -->
