@@ -4,16 +4,16 @@ import Spinner from './../../layouts/Spinner';
 
 import MostFollowedUser from './MostFollowedUser';
 
-let githubClientId = '129cb694760f23c996de';
-let githubClientSecret = '0109baf5195c3c9ee604a10160230362fe0fef1b';
+let githubClientId;
+let githubClientSecret;
 
-// if(process.env.NODE_ENV !== 'production'){
-// 	githubClientId = process.env.REACT_APP_GITHUB_CLIEND_ID;
-// 	githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
-// }else{
-// 	githubClientId = process.env.GITHUB_CLIEND_ID;
-// 	githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
-// }
+if(process.env.NODE_ENV !== 'production'){
+	githubClientId = process.env.REACT_APP_GITHUB_CLIEND_ID;
+	githubClientSecret = process.env.REACT_APP_GITHUB_CLIENT_SECRET;
+}else{
+	githubClientId = process.env.GITHUB_CLIEND_ID;
+	githubClientSecret = process.env.GITHUB_CLIENT_SECRET;
+}
 
 const MostFollowedUsersPage = () => {
   const [most_followed_users, set_most_followed_users] = useState([]);
